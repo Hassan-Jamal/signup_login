@@ -31,7 +31,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final User? user = Auth().currentUser;
+    final User? user = Auth().currentUser; //to show email of current user
 
     return Scaffold(
       appBar: AppBar(

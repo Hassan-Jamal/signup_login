@@ -19,6 +19,7 @@ class _WidgetTreeState extends State<WidgetTree> {
         stream: Auth().authStateChanges,
         builder: (context, snapshot) {
           if (snapshot.hasData) {
+            //to authenticate that if data is available in firebase or not
             // User is authenticated
             return HomePage();
           } else {
